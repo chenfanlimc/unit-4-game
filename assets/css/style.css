@@ -1,0 +1,57 @@
+h1 {
+    color: white;
+    background-color: orange;
+    display: inline;
+    padding: 15px;
+
+}
+
+.title {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.container {
+    width: 50%;
+    margin-left:20px;
+}
+
+.img-crystal {
+    width: 120px;
+    margin-left: 0px;
+}
+
+.instruction {
+    color: rgb(33, 150, 33);
+    font-weight: bold;
+    background-color: rgb(233, 220, 202);
+    margin: 10px 5px 5px 0px;
+}
+
+body {
+    background-image: url("../images/128-198.jpg");
+}
+
+.targetScoreBox {
+    background-color: rgb(33, 150, 33);
+    padding: 5px 30px 30px 5px;
+    margin: 5px 5px 5px 0px;
+}
+
+.targetScore {
+    color: purple;
+}
+
+.scoreCounter {
+    background-color: cyan;
+    margin: 5px;
+}
+
+.yourScoreContainer {
+    background-color: rgb(43, 114, 99);
+    margin-top: 20px;
+}
+
+.yourScoreNum {
+    padding-bottom: 40px;
+}
