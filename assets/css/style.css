@@ -1,6 +1,6 @@
 h1 {
-    color: white;
-    background-color: orange;
+    color: rgb(193,166,53);
+    background-color: rgb(96,126,56);
     display: inline;
     padding: 15px;
 
@@ -12,46 +12,71 @@ h1 {
 }
 
 .container {
-    width: 50%;
     margin-left:20px;
+    
 }
 
 .img-crystal {
     width: 120px;
     margin-left: 0px;
+    border: 5px solid black;
 }
 
 .instruction {
-    color: rgb(33, 150, 33);
+    color: rgb(193,166,53);
+    background-color: rgb(96,126,56);
     font-weight: bold;
-    background-color: rgb(233, 220, 202);
     margin: 10px 5px 5px 0px;
 }
 
 body {
-    background-image: url("../images/128-198.jpg");
+    background-image: url("../images/background.jpg");
 }
 
 .targetScoreBox {
-    background-color: rgb(33, 150, 33);
+    background-color: rgb(96,126,56);
     padding: 5px 30px 30px 5px;
     margin: 5px 5px 5px 0px;
 }
 
 .targetScore {
-    color: purple;
+    color: rgb(193,166,53);
 }
 
 .scoreCounter {
-    background-color: cyan;
-    margin: 5px;
+    background-color: rgb(96,126,56);
+    margin: 0px 0px 5px 0px;
 }
 
 .yourScoreContainer {
-    background-color: rgb(43, 114, 99);
+    background-color: rgb(96,126,56);
     margin-top: 20px;
 }
 
 .yourScoreNum {
     padding-bottom: 40px;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+}
+
+* {
+    color: rgb(193,166,53);
+}
+
+@media screen and (max-width: 980px) {
+    .img-crystal {
+        width: 100px;
+        margin-left: 0px;
+        border: 2px solid black;
+    }
+
+    .loz {
+        display: none;
+    }
+    .container {
+        margin: auto;
+    }
 }
