@@ -48,9 +48,27 @@ body {
     margin: 0px 0px 5px 0px;
 }
 
+.restart {
+    background-color: rgb(96,126,56);
+    margin: 0px 0px 5px 0px; 
+    display: flex;
+}
+
+#resetButton {
+    position: relative;
+    margin: auto;
+    
+}
+
+.highScoreContainer {
+    background-color: rgb(96,126,56);
+    margin: 5px 0px 5px 0px; 
+    display: flex;
+}
+
 .yourScoreContainer {
     background-color: rgb(96,126,56);
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .yourScoreNum {
@@ -60,6 +78,13 @@ body {
 .heart {
     width: 30px;
     height: 30px;
+}
+
+.monsterImage {
+    max-width:30px;
+    max-height:30px;
+    width: auto;
+    height: auto;
 }
 
 * {

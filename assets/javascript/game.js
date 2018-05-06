@@ -35,8 +35,12 @@ function playLose() {
 
 function playGameOver() {
     var audio = document.getElementById("gameOver");
-    var clone = audio.cloneNode(true);
-    clone.play();
+    audio.play();
+}
+
+function pauseGameOver() {
+    var audio = document.getElementById("gameOver");
+    audio.pause();
 }
 
 //uh...clicking img crystals will add the data-crystal value from the particular crystal
@@ -66,9 +70,23 @@ function heartContainerCheck() {
     }
 }
 
+//end game, alert lives have run out, play gameOver music, set high score if it meets condition
 function endGame() {
     alert("You've run out of lives. Please play again.")
     playGameOver();
+    if (wins > parseInt($("#highScore").html())) {
+        $("#highScore").text(wins);
+    }
+}
+
+//adds monster image element from a random array of different monster image assets
+function addMonsterToken() {
+    var monsterArray = ["BotW_Forest_Octorok_Model", "BotW_Golden_Lynel_Model",
+        "BotW_Golden_Moblin_Model", "BotW_Hinox_Model", "BotW_Molduga_Model", "BotW_Silver_Bokoblin_Model", "BotW_Stalkoblin_Model"];
+    var randomMonster = monsterArray[Math.floor(Math.random() * monsterArray.length)];
+    var monsterDiv = $("<img class='monsterImage'>");
+    monsterDiv.attr("src", "assets/images/" + randomMonster + ".png");
+    $(".win-icons").append(monsterDiv);
 }
 
 function checkStatus() {
@@ -82,6 +100,7 @@ function checkStatus() {
         playWin();
         alert("Well done, you win! Your current win count is at: " + wins)
         initializeGame();
+        addMonsterToken();
     }
     else if (currentYourScore > targetNumber) {
         playLose();
@@ -113,4 +132,17 @@ function initializeGame() {
         crystalVal.attr("data-crystal", crystalNumber);
         crystalVal.text(crystalNumber);
     }
+}
+
+function resetGame() {
+    initializeGame();
+    wins = 0;
+    losses = 0;
+    $(".win-counter").text(wins)
+    $(".loss-counter").text(losses);
+    $(".firstHeart").show();
+    $(".secondHeart").show();
+    $(".thirdHeart").show();
+    $(".finalHeart").show();
+    pauseGameOver();
 }
