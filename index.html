@@ -9,24 +9,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 </head>
 
 <body>
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-md-6">
             <div class="container">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-md-12 title">
-                        <h1>Link's Nightmare</h1>
+                        <h1 id="titleBorder">Link's Nightmare</h1>
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-12 instruction">
+                    <div class="col-md-12 instruction borderImage">
                         <!--instructions here, skin color background, green text-->
-                        <p>You have been transported to an alternate dimension! Link has been tasked with the monumentous
-                            role of providing his paying customers with the correct
-                            change in rupees or he will be attacked (it's a harsh world).
+                        <p>Link (you) has been transported to an alternate dimension! You have been tasked with the monumentous
+                            role of providing your paying customers with the correct
+                            change in rupees or you will be savagely attacked (it's a harsh world).
                         </p>
                         <p>There are 4 types of rupees below. Click on each with give you a certain number of rupees, 
                             adding them to your rupee change count.
@@ -38,17 +40,17 @@
                             of each round, so you must click on them first to know what they're worth.</p>
                         <p>Each time a round starts (new target value), the rupee amounts are randomized!
                         </p>
-                        <p>Every customer you satisfy adds to your win count (and your customer satisfaction queue!)</p>
+                        <p>Every customer you satisfy adds to your win count (and your customer trophy collection!)</p>
                         <p>If you lose all 4 lives, it is game over and you must start over (click Restart button).</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 targetScoreBox">
+                    <div class="col-md-12 targetScoreBox borderImage">
                         <!--target score here, green background, purple text-->
                         <p>Target Change Amount:</p>
                         <h2 class="targetScore">SCORE</h2>
                     </div>
-                    <div class="col-md-6 scoreCounter">
+                    <div class="col-md-6 scoreCounter borderImage">
                         <div class="row">
                             <div class="col-md-12">
                                 <!--Win counter-->
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-5 restart">
+                    <div class="col-md-5 restart borderImage">
                         <button id="resetButton" onclick="resetGame()">Restart</button>
                     </div>
                 </div>
@@ -107,17 +109,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7 yourScoreContainer">
+                    <div class="col-md-7 yourScoreContainer borderImage">
                         <!--total score text-->
                         <p class="yourScoreText">The total change you've given is:</p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-4 highScoreContainer">
+                    <div class="col-md-4 highScoreContainer borderImage">
                         <p>Your high score is: <span id="highScore">0</span></p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7 yourScoreContainer">
+                    <div class="col-md-7 yourScoreContainer borderImage">
                         <!--dynamic current score based on crystals clicked-->
                         <p class="yourScoreNum">0</p>
                     </div>
@@ -125,7 +127,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <img src="assets/images/second background.png" alt="legend of zelda" class="loz">
+            <img src="assets/images/secondBackground.png" alt="legend of zelda" class="loz">
         </div>
     </div>
 
