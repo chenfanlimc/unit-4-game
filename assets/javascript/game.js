@@ -144,5 +144,12 @@ function resetGame() {
     $(".secondHeart").show();
     $(".thirdHeart").show();
     $(".finalHeart").show();
+    $(".win-icons").empty();
     pauseGameOver();
+}
+
+var thisGLobalVar=0;
+
+function thisFunction() {
+    var thisGLobalVar = 2;
 }
